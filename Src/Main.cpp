@@ -5,8 +5,8 @@
 //const int WINDOW_WIDTH;
 //const int WINDOW_HEIGHT;
 
-int main(int argc, const char* argv[])
+int main(int argc, char* args[])
 {
 	std::cout << "Hello World.. without Errors" << '\n';
-	return 0;
+	return 0; 
 }

@@ -11,7 +11,14 @@
 		{
 			"name": "Build Debug",
 			"working_dir": "${project_path}",
-			"cmd": "gcc Src/*.cpp -g -std=c++14 -Wall -m64 -I/Include/ -I/Library/Frameworks/SDL2.framework/Headers -I/Library/Frameworks/SDL2_image.framework/Headers -lstdc++ -F/Library/Frameworks -o Bin/Debug/Main | ./Bin/Debug/Main",
+			"cmd": "gcc Src/*.cpp -g -std=c++14 -Wall -m64 -I/Include/ -I/Library/Frameworks/SDL2.framework/Headers -I/Library/Frameworks/SDL2_image.framework/Headers -lstdc++ -F/Library/Frameworks -o Bin/Debug/Main && ./Bin/Debug/Main",
+			"selector": "source.c++",
+			"shell": true, 
+		},
+		{
+			"name": "Build Release",
+			"working_dir": "${project_path}",
+			"cmd": "gcc Src/*.cpp -O3 -std=c++14 -Wall -m64 -I/Include/ -I/Library/Frameworks/SDL2.framework/Headers -I/Library/Frameworks/SDL2_image.framework/Headers -lstdc++ -F/Library/Frameworks -o Bin/Release/Main && ./Bin/Release/Main",
 			"selector": "source.c++",
 			"shell": true, 
 		}
