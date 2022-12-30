@@ -1,4 +1,8 @@
 *.o
 *.exe
 *.dll
-.DS_Store
+*.dSYM
+*.DS_Store
+*.sublime-workspace
+/Bin/Debug/Main
+/Bin/Release/Main
